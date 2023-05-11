@@ -1,0 +1,11 @@
+*.env
+
+media
+
+**/__pycache__
+
+env
+
+*.sqlite3
+
+proyecto/static/portfolio
