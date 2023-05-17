@@ -159,6 +159,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 if not DEBUG:
 
+    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
     STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 #AWS_ACCESS_KEY_ID = env('AWS_ACCESS_KEY_ID')
