@@ -146,7 +146,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'proyecto/static')
 ]
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
 
 MEDIA_URL = '/media/'
 
@@ -157,7 +157,9 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+if not DEBUG:
+
+    STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 #AWS_ACCESS_KEY_ID = env('AWS_ACCESS_KEY_ID')
 #AWS_SECRET_ACCESS_KEY = env('AWS_SECRET_ACCESS_KEY')
