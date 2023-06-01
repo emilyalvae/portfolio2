@@ -6,7 +6,7 @@
 
 <header class="row bg-black">
     <div class="col-md-4">
-    <img src="{% static 'portfolio/profileee.png' %}" class="img-fluid"/>
+    <img src="{% static 'portfolio/profile2.jpg' %}" class="img-fluid"/>
     </div>
 
     <div class="col-md-8 my-auto">
@@ -48,7 +48,9 @@
             
 
             {% if project.url %}
-            <a href="{{project.url}}" class="btn btn-light rounded-0 btn-sm" target="_blank">{{project.url}}</a>
+            <a href="{{project.url}}" class="btn btn-sm" target="_blank">
+                <img src="{% static 'portfolio/github.png' %}" alt="GitHub" class="github-logo transparent-image" title="Ver Repositorio"> 
+            </a>
 
             {% endif %} 
             </div>
