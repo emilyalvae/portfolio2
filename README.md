@@ -2,7 +2,7 @@
 
 ## Description
 
-Este es un Portafolio de poryectos y blogs 
+Este es un Portafolio de proyectos y blogs 
 
 ## Installation
 
