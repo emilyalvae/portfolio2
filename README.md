@@ -17,3 +17,7 @@ python manage.py migrate
 
 python manage.py runserver
 ```
+
+## Docs for deploy
+
+[Deploy en render](./docs/deploy.md)
